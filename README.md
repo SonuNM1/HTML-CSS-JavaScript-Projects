@@ -3,6 +3,9 @@
 
 - Maps
 - Filters
+- Fetch API
+- async await 
+- promise
 
 
 #### CSS 
