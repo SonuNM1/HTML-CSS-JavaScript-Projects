@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+    <h2>What JavaScript can do?</h2>
+    <p id="demo">JavaScript can change the HTML content</p>
+    <button
+    style="cursor: pointer;"
+    onclick="document.getElementById('demo').innerHTML='Hello JavaScript'"
+    >
+        Click Me
+    </button>
+    -->
+
+    <!--
+    <h2>What JavaScript can do?</h2>
+    <p>JavaScript can change the HTML attribute values</p>
+
+    <p>In this case, JavaScript changes the value of the src attribute of an image</p>
+
+    <img id="myImg" src="bulb_off.png" alt="bulb off" style="width: 100px; height: 100px;" >
+
+    <button onclick="document.getElementById('myImg').src='bulb_on.png'">
+        Click me to turn on the light
+    </button>
+
+    <button onclick="document.getElementById('myImg').src='bulb_off.png'" >
+        Click me to turn off the light
+    </button>
+    -->
+
+    <!--
+    <h2>What can javascript do?</h2>
+    <p id="text">JavaScript can change the html font size</p>
+
+    <button
+    onclick="document.getElementById('text').style.fontSize='35px'"
+    >
+        Click Me 
+    </button>
+    -->
+    <p id="hide">JavaScript can hide HTML elements</p>
+
+    <button id="hideButton">Click Me to Hide</button>
+    <button id="showButton">Click Me to Show hidden HTML Element</button>
+
+    <script>
+        const hideButton = document.getElementById('hideButton');
+        const showButton = document.getElementById('showButton');
+        const hideElement = document.getElementById('hide');
+
+        hideButton.addEventListener('click', () => {
+            hideElement.style.display = 'none';
+        });
+
+        showButton.addEventListener('click', () => {
+            hideElement.style.display = 'block';
+        });
+    </script>
+    </body>
+    </html>
