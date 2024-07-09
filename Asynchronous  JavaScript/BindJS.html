@@ -1,0 +1,39 @@
+<!--
+    with the bind(), an object can borrow a method from another object. 
+    In the following example, the member object borrows the fullname method from the person object. 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bind</title>
+</head>
+<body>
+    <h1>JavaScript Function bind()</h1>
+    <p>This example creates 2 objects (person and member).</p>
+    <p>The member object borrows the fullname method from person: </p>
+
+    <p id="demo"></p>
+
+    <script>
+        const person = {
+            firstName: "Sonu",
+            lastName: "NM",
+            fullName: function(){
+                return this.firstName + " " + this.lastName ; 
+            }
+        }
+
+        const member = {
+            firstName: "Garima",
+            lastName: "Joshi"
+        }
+
+        let fullName = person.fullName.bind(member) ; 
+
+        document.getElementById('demo').innerHTML = fullName() ; 
+    </script>
+</body>
+</html>

@@ -18,6 +18,18 @@ function getCake(callback){
     }, 2000);
 }
 
+function putCherry(cake, callback){
+    setTimeout(() => {
+        const cherry = "🎶" ; 
+        console.log("Here is your cherry on cake: ", cherry);
+        callback(cherry) ; 
+    }, 2000);
+}
+
 getCake((cake)=>{
     console.log('Got the cake:', cake);
+})
+
+getCherry(()=>{
+    console.log("Got the cherry on cake: ", cherry);
 })

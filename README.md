@@ -70,6 +70,8 @@ Constructor function: 'this' refers to the new object being created
 
 - Destructuring and Spread Operator
 
+- JavaScript functions are executed in the sequence they are called. Not in the sequence they are defined
+
 - Why is JavaScript functions called type-1 citizen ? 
 
 - Higher Order functions
@@ -82,7 +84,7 @@ Constructor function: 'this' refers to the new object being created
 
 - Callback function + Callback hell
 
-- Bind and Closures 
+- Bind (one object borrows method from another object) and Closures (A closure is a function having access to the parent scope, even after the parent function has closed.)
 
 - Asynchronous JavaScript : Callbacks, async await, Promises 
 
@@ -90,10 +92,15 @@ Constructor function: 'this' refers to the new object being created
 
 - JavaScript AJAX 
 
+- Variables created without a declaration keyword (var, let, or const) are always global,
+even if they are created inside a function.
+
 
 ### Asynchronous JavaScript 
 
 - callback function + callback hell 
+
+- What is Promises in JavaScript, and why are they preferred over callbacks? How does "callback hell" occur, and what strategies can be used to avoid it? 
 
 - JavaScript is a synchronous, single-threaded programming language. Explain 
 
@@ -103,9 +110,11 @@ Constructor function: 'this' refers to the new object being created
 
 - async await 
 
-- Promises 
+- Promises: `Asynchronous JavaScript/Promises.js`
 
 - setTimeOut() - calls a function after a number of milliseconds. Executes a block of code after the specified time. Executes the code onl once. 
+
+- setInterval() - execute a function repeatedly at specified intervals. 
 
 Syntax: setTimeout(function, milliseconds) ;
 
