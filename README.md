@@ -1,5 +1,5 @@
 
-#### JavaScript
+### JavaScript
 
 - Maps
 - Filters
@@ -51,15 +51,68 @@ Constructor function: 'this' refers to the new object being created
 
 - toString()
 
-- map()
+- forEach: executes a function for each array element. Doesn't return a new array or any value. (Eg: logging values)
 
-- filter()
+- map() : transforms each element of an array using a function and returns a new array with the transformed elements. 
+        Eg - used to create a new array with squared values 
 
-- reduce()
+- reduce(): combines all elements of an array into single value using a function. Useful for aggregating or combining values. 
+    Eg - used to calculate the sum of each element in the array 
+
+- filter(): creates a new array with all the elements that pass the test implemeted by the provider function
+    Eg - used to create a new array containing only even values 
 
 - strict mode Vs non-strict mode 
 
-#### CSS 
+- loops in javascript (for, for in, for of, while, do while)
+
+- JavaScript Set and Maps
+
+- Destructuring and Spread Operator
+
+- Why is JavaScript functions called type-1 citizen ? 
+
+- Higher Order functions
+
+- Hoisting in Function declarations Vs. Function expressions 
+
+- Hoisting
+
+- Arrow function 
+
+- Callback function + Callback hell
+
+- Bind and Closures 
+
+- Asynchronous JavaScript : Callbacks, async await, Promises 
+
+- JavaScript Fetch API 
+
+- JavaScript AJAX 
+
+
+### Asynchronous JavaScript 
+
+- callback function + callback hell 
+
+- JavaScript is a synchronous, single-threaded programming language. Explain 
+
+- Fetch API 
+
+- AJAX (Asynchronous JavaScript and XML)
+
+- async await 
+
+- Promises 
+
+- setTimeOut() - calls a function after a number of milliseconds. Executes a block of code after the specified time. Executes the code onl once. 
+
+Syntax: setTimeout(function, milliseconds) ;
+
+Real-life use: We see that after spending some seconds/minutes on any website, a pop-up appears which asks for sign-in or login. 
+
+
+### CSS 
 
 - Variables
 - Utility class 
