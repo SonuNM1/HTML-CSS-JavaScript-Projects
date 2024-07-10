@@ -98,7 +98,20 @@ even if they are created inside a function.
 
 ### Asynchronous JavaScript 
 
-- callback function + callback hell 
+
+- Is JavaScript a synchronous(single threaded) or asynchronous programming language? 
+
+JavaScript is inherently synchronous, but it uses the event loop to handle asynchronous operations.
+
+Web APIs allow JavaScript to perform non-blocking tasks.
+
+Promises provide a better way to handle asynchronous operations compared to callbacks.
+
+Async/Await syntax makes asynchronous code look and behave more like synchronous code, simplifying the handling of asynchronous operations.
+
+- Callback Queue
+
+- callback function + callback hell and Pyramind of DOM
 
 - What is Promises in JavaScript, and why are they preferred over callbacks? How does "callback hell" occur, and what strategies can be used to avoid it? 
 
@@ -114,11 +127,57 @@ even if they are created inside a function.
 
 - setTimeOut() - calls a function after a number of milliseconds. Executes a block of code after the specified time. Executes the code onl once. 
 
-- setInterval() - execute a function repeatedly at specified intervals. 
+- clearTimeout(). What is the id returned by setTimeout()?
+
+When setTimeout is called, it returns a unique timeout ID. This ID is a positive integer that uniquely identifies the scheduled timeout and can be used to manage it.
+
+clearTimeout() cancels a timeout that was previously scheduled with setTimeout, using the timeout ID.
+
+- What happens if we put provide '0' as the timeout parameter in setTimeout() ? 
+
+When you provide 0 as the timeout parameter in setTimeout, the specified function will be executed as soon as possible after the current execution context and any currently pending tasks have completed. 
+
+However, it will not be executed immediately. Instead, it is added to the event queue and will be executed after the current call stack is cleared.
+
+Using 0 as the timeout parameter is often used to defer the execution of a function until the call stack is clear, allowing other synchronous code to run first.
+
+- setInterval() and clearInterval() - execute a function repeatedly at specified intervals. 
 
 Syntax: setTimeout(function, milliseconds) ;
 
 Real-life use: We see that after spending some seconds/minutes on any website, a pop-up appears which asks for sign-in or login. 
+
+- JavaScript Engine behind-the-scene: Event loop, Callstack, Callback Queue, Web API
+
+
+### JavaScript DOM 
+
+
+- HTML Collection
+
+- Finding by HTML Element(by id, clas, tag, CSS Selectors-querySelector,querySelectorAll)
+
+- Modifying HTML 
+
+1. changing HTML Content using innerHTML:
+    document.getElementById(id).innerHTML = new HTML
+
+2. changing HTML attributes value:
+    document.getElementById('myImage').src = 'landscape.jpg';
+    document.getElementById('p2').style.color = 'blue' ; 
+
+3. Modifying class in HTML
+    element.classList.add('myStyle'); 
+    element.classList.remove('myStyle'); 
+    element.classList.toggle('myStyle'); 
+
+- Creating and Appending HTML 
+
+We can create a new element using the createElement() method of the document. We can append this new element (node) inside any other element. 
+
+const para = document.createElement("p);
+const element = document.getElementById('div1') ; 
+element.appendChild(para) ; 
 
 
 ### CSS 
