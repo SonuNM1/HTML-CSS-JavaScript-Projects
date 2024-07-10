@@ -121,9 +121,12 @@ Async/Await syntax makes asynchronous code look and behave more like synchronous
 
 - AJAX (Asynchronous JavaScript and XML)
 
+- Axios 
+
 - async await 
 
-- Promises: [Promises.js](./Asynchronous%20JavaScript/Promises.js)
+- Promises: [Promises.js](https://github.com/SonuNM1/HTML-CSS-JavaScript-Projects/blob/main/Asynchronous%20JavaScript/Promises.js)
+
 
 - setTimeOut() - calls a function after a number of milliseconds. Executes a block of code after the specified time. Executes the code onl once. 
 
@@ -148,6 +151,8 @@ Syntax: setTimeout(function, milliseconds) ;
 Real-life use: We see that after spending some seconds/minutes on any website, a pop-up appears which asks for sign-in or login. 
 
 - JavaScript Engine behind-the-scene: Event loop, Callstack, Callback Queue, Web API
+
+- XHR Requests and HTTP Requests
 
 
 ### JavaScript DOM 

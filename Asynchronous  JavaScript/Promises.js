@@ -47,3 +47,14 @@ ticket.then((data)=>{
 })
 
 // the data will consist of the data/value you have passed in the respective resolve or reject
+
+/*
+
+Producing a Promise: Creating a promise and defining the asynchronous operation that will eventually resolve or reject it.
+
+Example: return new Promise((resolve, reject) => { ... });
+
+Consuming a Promise: Using the result of a promise once it has been resolved or rejected.
+Example: promise.then(value => { ... }).catch(error => { ... });
+
+*/
