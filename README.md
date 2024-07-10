@@ -110,7 +110,7 @@ even if they are created inside a function.
 
 - async await 
 
-- Promises: `Asynchronous JavaScript/Promises.js`
+- Promises: [Promises.js](./Asynchronous%20JavaScript/Promises.js)
 
 - setTimeOut() - calls a function after a number of milliseconds. Executes a block of code after the specified time. Executes the code onl once. 
 
