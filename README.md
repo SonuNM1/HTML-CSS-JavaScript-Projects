@@ -90,7 +90,7 @@ Constructor function: 'this' refers to the new object being created
 
 - JavaScript Fetch API 
 
-- JavaScript AJAX 
+- JavaScript AJAX: AJAX is often implemented using the XMLHttpRequest object or the modern fetch API.
 
 - Variables created without a declaration keyword (var, let, or const) are always global,
 even if they are created inside a function.
