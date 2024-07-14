@@ -125,7 +125,7 @@ Async/Await syntax makes asynchronous code look and behave more like synchronous
 
 - async await 
 
-- Promises: [Promises.js](https://github.com/SonuNM1/HTML-CSS-JavaScript-Projects/blob/main/Asynchronous%20JavaScript/Promises.js)
+- Promises: refer AsynchronousJavaScript/Promises.js
 
 
 - setTimeOut() - calls a function after a number of milliseconds. Executes a block of code after the specified time. Executes the code onl once. 
@@ -188,4 +188,18 @@ element.appendChild(para) ;
 ### CSS 
 
 - Variables
+
 - Utility class 
+
+- Inline (styles directly added to an HTML element using the 'style' attribute ; have the highest priority) Vs. Internal (styles defined within a <style> tag in the <head> section) Vs. External Style (styles defined in an external CSS file linked using the <link> tag)
+
+- Selectors (universal, id, class, descendant, grouping, pseudo selectors)
+
+- Pseudo selectors (special selectors that targets the element based on their state or characteristics) - Pseudo class (hover, active, focus, first-child, last-child, nth-child) & Pseudo elements (before, after, first-line, first-letter)
+
+- <a href="#">This is a link</a>
+  <a href="">This is a link</a>
+
+- Padding (space between content of the element and its border) and Margin (space outside the border of an element)
+
+- height, max-height, min-height, max-width, min-width, width, em, rem

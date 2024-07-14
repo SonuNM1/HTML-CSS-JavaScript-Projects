@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-Selectors Example</title>
+    <style>
+        /* Change link color to red when hovered over */
+        a:hover{
+            color: red;
+        }
+        /* Change link color to blue when active (clicked) */
+        a:active{
+            color: blue;
+        }
+        /* Add green border when the input field is focused */
+        input:focus{
+            border: 2px solid green;
+        }
+        /* Make the first paragraph bold */
+        p:first-child{
+            font-weight: bold;
+            color: violet;
+        }
+        p:nth-child(2){
+            font-weight: bold;
+        }
+        /* Make the last paragraph italic */
+        p:last-child{
+            font-style: italic;
+        }
+        /* Change color of the second list item to orange */
+        li:nth-child(2){
+            color: orange;
+        }
+        /* Add yellow background to the second paragraph */
+        p:nth-of-type(2){
+            background-color: yellow;
+        }
+
+                /* Pseudo-Elements */
+
+
+        /* Add Note: before each paragraph */
+
+        p::before{
+            content: "Note: ";
+            font-weight: bold;
+            color: red;
+        }
+
+        /* Add [End] after each paragraph */
+
+        p::after{
+            content: " [End]";
+            font-weight: bold;
+            color: blue;
+        }
+
+        /* Transform the first line of each paragraph to uppercase */
+
+        p::first-line{
+            text-transform: uppercase;
+        }
+
+        /* Style the first letter of each paragraph */
+
+        p:first-child::first-letter{
+            font-size: 200%;
+            color: green;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <p>This is the first paragraph</p>
+        <p>This is the second paragraph, and it is quite long to demostrate the ::first-line pseudo-element</p>
+        <p>This is the third paragraph</p>
+    </div>
+    <ul>
+        <li>First item</li>
+        <li>Second item</li>
+        <li>Third item</li>
+    </ul>
+    <a href="#">This is a link</a>
+    <a href="">This is a link</a>
+    <br>
+    <br>
+    <input type="text" placeholder="Focus on me">
+</body>
+</html>
