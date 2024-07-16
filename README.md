@@ -203,3 +203,15 @@ element.appendChild(para) ;
 - Padding (space between content of the element and its border) and Margin (space outside the border of an element)
 
 - height, max-height, min-height, max-width, min-width, width, em, rem
+
+- inline (doesn't start on a new line and only takes up as much width as necessary) and block element (starts from new line and takes up the full width available - stretches out to the left and right as far as it can)
+
+- Position property (static, relative, fixed, absolute, sticky)
+
+- z-index (controls the vertical stacking order of elements that overlap. An element with a higher 'z-index' value will be positioned in front of an element with a lower 'z-index' value). Higher values stack on tap, while lower values stack below. Works only on positioned elements and flex items.  
+
+Without z-index, if two positioned elements overlap each other without a z-index specified, the element defined last in the HTML code will be shown on top. 
+
+- Media Queries
+
+- Grid
