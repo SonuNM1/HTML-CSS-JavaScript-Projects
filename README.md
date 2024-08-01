@@ -38,6 +38,8 @@ While both let and var are hoisted, let variables are not initialized until thei
 
 Refers to the context in which a function is called. The value of 'this' depends on how the function has been invoked. 
 
+'this' keyword refers to the object it belongs to. It has different values depending on where it is used. 
+
 Global context: 'this' refers to the global object (window in browsers)
 Object method: 'this' refers to object the method is called on
 Regular function: 'this' refers to the global object in non-strict mode and undefined in strict mode
@@ -94,6 +96,14 @@ Constructor function: 'this' refers to the new object being created
 
 - Variables created without a declaration keyword (var, let, or const) are always global,
 even if they are created inside a function.
+
+- null Vs. Undefined 
+
+- call, apply and bind 
+
+- Type Coercion 
+
+
 
 
 ### Asynchronous JavaScript 
